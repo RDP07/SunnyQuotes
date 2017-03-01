@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+* {
+  text-align: center;
+  background: #f7c315;
+  background-size: cover;
+  color: black;
+  margin: 0 auto;
+}
+
+div {
+  max-width: 600px;
+}
+
+h1 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 40px;
+}
+
+footer {
+  color: black;
+}
+
+#author {
+  font-family: 'Shadows Into Light', cursive, serif;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quote-text {
+  font-size: 22px;
+}
+
+#getQuote {
+  background: black;
+  border: 0px;
+  color: #f7c315;
+  font-size: 17px;
+}
+
+#tweet {
+  font-size: 21px;
+  background: #3366BB;
+  color: white;
+  border: 0px;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+img {
+  bottom: 0;
+  margin: 0 auto;
+  border-radius: 46px;
+  height: 230px;
+  width: 230px;
+  left: 880px;
+}
+
+l {
+  float: left;
+}
+
+r {
+  float: right;
+}
