@@ -1,4 +1,4 @@
-$(document).ready(); {
+$(document).ready(function() {
 $(function() {
   var author = $('#author');
   var text = $('#quote-text');
@@ -25,6 +25,7 @@ $(function() {
       author.removeAttr("href");
       author.html("<strong>Anonymous</strong>");
     }
+
     $(".frank").hide();
     $(".dee").hide();
     $(".dennis").hide();
@@ -58,13 +59,13 @@ tweet = data.sqQuote + " By - " + data.sqWho;
 
 var tweet;
 $('#tweet').on("click", function() {
-  if (tweet.length > 140) {
+  if (tweet.length + " via goo.gl/UlHRmd" >= 140) {
     tweet = "";
     $('#tweet').addClass("disabled");
     alert("Sorry! 140 characters exceeded!");
   } else {
     event.preventDefault();
-    window.open('https://twitter.com/intent/tweet?hashtags=' + encodeURIComponent($("#quote-text").text() + " ~" + $("#author").text() + " via goo.gl/UlHRmd") + '&', 'twitterwindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 225) + ', left=' + $(window).width() / 2 + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+    window.open('https://twitter.com/intent/tweet?text=' +encodeURIComponent('"'+$("#quote-text").text()+'"' + " ~" + $("#author").text() + " via goo.gl/UlHRmd") + '&', 'twitterwindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 225) + ', left=' + $(window).width() / 2 + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0', '_blank');
   }
 });
-}
+});
